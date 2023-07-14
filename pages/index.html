@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+      integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../style.css" />
+    <script src="../jspack.js/index.js" defer></script>
+    <title>Country API</title>
+  </head>
+  <body>
+    <nav>
+      <h4>Where in the world?</h4>
+      <div class="toggler">
+        <div class="icon">
+          <i class="fas fa-moon"></i>
+        </div>
+        <p>Dark Mode</p>
+      </div>
+    </nav>
+
+    <div class="search-section">
+      <div class="input">
+        <i class="fas fa-search"></i>
+        <input type="text" placeholder="Search for a country..." />
+      </div>
+      <div class="filter">
+        <div class="label">
+          <p>Filter by Region</p>
+          <i class="fas fa-chevron-down"></i>
+        </div>
+        <div class="drop-down">
+          <p class="any" id="region">Any</p>
+          <p class="Africa" id="region">Africa</p>
+          <p class="America" id="region">America</p>
+          <p class="Asia" id="region">Asia</p>
+          <p class="Europe" id="region">Europe</p>
+          <p class="Oceania" id="region">Oceania</p>
+        </div>
+      </div>
+    </div>
+
+    <section class="country">
+      <div class="container"></div>
+    </section>
+
+    <div class="loader">
+      <span></span>
+      <span></span>
+      <span></span>
+    </div>
+  </body>
+</html>
