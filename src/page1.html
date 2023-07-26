@@ -13,8 +13,8 @@
     />
     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&family=Roboto:wght@300&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="../style.css" />
-    <script src="../jspack/index.js" defer></script>
-    <title>Country API</title>
+    <script src="./jspack/common.js" defer></script>
+    <title>Country details</title>
   </head>
   <body>
     <nav>
@@ -27,30 +27,12 @@
       </div>
     </nav>
 
-    <div class="search-section">
-      <div class="input">
-        <i class="fas fa-search"></i>
-        <input type="text" placeholder="Search for a country..." />
-      </div>
-      <div class="filter">
-        <div class="label">
-          <p>Filter by Region</p>
-          <i class="fas fa-chevron-down"></i>
-        </div>
-        <div class="drop-down">
-          <p class="any" id="region">Any</p>
-          <p class="Africa" id="region">Africa</p>
-          <p class="America" id="region">America</p>
-          <p class="Asia" id="region">Asia</p>
-          <p class="Europe" id="region">Europe</p>
-          <p class="Oceania" id="region">Oceania</p>
-        </div>
-      </div>
-    </div>
+    <button href="../pages/index.html" class="back sec-page">
+      <a href="../pages/index.html"><i class="fas fa-arrow-left"></i></a>
+      <a href="../pages/index.html">Back</a>
+    </button>
 
-    <section class="country">
-      <div class="container"></div>
-    </section>
+    <div class="country-data"></div>
 
     <div class="loader">
       <span></span>
