@@ -124,7 +124,7 @@ function countryClick(div){
     div.addEventListener('click', function(){
         const countryName = div.querySelector('.countryActual').textContent
         localStorage.setItem("country", countryName )
-        window.location.href = "../pages/page1.html"
+        window.location.href = "../page1.html"
     })
 }
 
